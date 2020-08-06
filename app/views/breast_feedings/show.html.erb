@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="margenes-show3 text-center">
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @breast_feeding.quantity %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Duration:</strong>
-  <%= @breast_feeding.duration %>
-</p>
+  <p>
+    <strong>Quantity:</strong>
+    <%= @breast_feeding.quantity %>
+  </p><br>
 
-<p>
-  <strong>Baby:</strong>
-  <%= @breast_feeding.baby %>
-</p>
+  <p>
+    <strong>Duration:</strong>
+    <%= @breast_feeding.duration %>
+  </p><br>
 
-<%= link_to 'Edit', edit_breast_feeding_path(@breast_feeding) %> |
-<%= link_to 'Back', breast_feedings_path %>
+  <p>
+    <strong>Baby:</strong>
+    <%= @breast_feeding.baby %>
+  </p><br>
+
+  <%= link_to 'Edit', edit_breast_feeding_path(@breast_feeding) %> |
+  <%= link_to 'Back', breast_feedings_path %>
+
+ </div> 

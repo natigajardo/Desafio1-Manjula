@@ -1,3 +1,52 @@
 // Place all the styles related to the Babies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Index
+    .margenes-tabla {
+        margin: 0rem 7rem;
+        margin-top: 5rem;
+    }
+    
+    .letra-content {
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+// _form 
+  
+    .margenes-form-baby {
+        margin: 0rem 4rem;
+        margin-top: 5rem;
+    }
+
+// NEW 
+    .text-back-margin {
+        padding-left: 8rem;
+    }
+
+// SHOW
+    .margenes-show-baby {
+        margin: 0rem 3rem;
+        margin-top: 7rem;
+    }
+
+    .margenes-show2 {
+        margin-left: 5rem;
+    }
+
+    .margenes-tabla2 {
+        margin: 0rem 4rem;
+    }
+
+    .tipografia2 {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+// Edit
+
+    .botones-margenes {
+        padding-left: 8rem;
+    }

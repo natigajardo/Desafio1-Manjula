@@ -1,34 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class="container margenes-show-baby">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @baby.name %>
-</p>
+  <div class="margenes-show2 text-left">
+    <p class="tipografia2">
+      <strong>Name:</strong>
+      <%= @baby.name %>
+    </p>
 
-<ul>
-  <% @baby.breast_feedings.each do |bf|%>
-    <li><span>Cantidad: <%= bf.quantity %>, Duración: <%= bf.duration %></span></li>
-    <% end%>
-</ul>
+    <ul>
+      <% @baby.breast_feedings.each do |bf|%>
+        <li class="tipografia2"><span>Cantidad: <%= bf.quantity %>, Duración: <%= bf.duration %></span></li>
+        <% end%>
+    </ul>
+  </div><br>
 
+  <table class="container table table-hover margenes-tabla2">
+      <thead>
+        <tr>
+        <th class="letra-content">Veces que ha <br>tomado hoy</th>
+        <th class="letra-content">Fecha de la <br> última vez que <br>bebió</th>
+        <th class="letra-content">Cuanto tiempo <br>ha tomado <br>hoy</th>
+        <th class="letra-content">Cuanto ha <br>bebido hoy</th>
+        </tr>
+      </thead>
 
-<table>
-  <thead>
-    <tr>
-    <th>Veces que ha tomado hoy</th>
-    <th>Fecha de la última vez que bebió</th>
-    <th>Cuanto tiempo ha tomado hoy</th>
-    <th>Cuanto ha bebido hoy</th>
-  </thead>
+    <tbody>
+      <td class="letra-content"><%= @baby.breast_feeding_times_today%></td>
+      <td class="letra-content"><%= @baby.last_time_drinking%></td>
+      <td class="letra-content"><%= @baby.breast_feeding_duration_today %></td>
+      <td class="letra-content"><%= @baby.breast_feeding_quantity_today%></td>
+    </tbody>
 
-  <tbody>
-    <td><%= @baby.breast_feeding_times_today%></td>
-    <td><%= @baby.last_time_drinking%></td>
-    <td><%= @baby.breast_feeding_duration_today %></td>
-    <td><%= @baby.breast_feeding_quantity_today%></td>
-  </tbody>
+  </table><br><br>
 
-</table>
-
-<%= link_to 'Edit', edit_baby_path(@baby) %> |
-<%= link_to 'Back', babies_path %>
+    <%= link_to 'Editar nombre', edit_baby_path(@baby) %> |
+    <%= link_to 'Back', babies_path %>
+ 
+ </div> 
